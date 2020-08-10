@@ -7,7 +7,7 @@ const forecast=require("./utils/forecast")
 const hbs=require("hbs")
 const app=express()
 
-
+const port=process.env.PORT || 3000
 
 //to set up handle bars engine and viewa location
 
@@ -105,4 +105,4 @@ app.get("*",(req,res)=>{
 
 
 
-app.listen(3000)
+app.listen(port)

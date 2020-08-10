@@ -4,7 +4,7 @@ document.getElementById("myform").addEventListener("submit",(event)=>{
     const address=document.getElementById("address").value
     //console.log(address)
     
-    fetch("http://localhost:3000/weather/?address="+address).then((response)=>
+    fetch("/weather/?address="+address).then((response)=>
 {
 
     response.json().then((data)=>{

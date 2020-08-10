@@ -1,10 +1,8 @@
 console.log("client js loaded")
-
-
 document.getElementById("myform").addEventListener("submit",(event)=>{
     event.preventDefault()
     const address=document.getElementById("address").value
-    console.log(address)
+    //console.log(address)
     
     fetch("http://localhost:3000/weather/?address="+address).then((response)=>
 {
